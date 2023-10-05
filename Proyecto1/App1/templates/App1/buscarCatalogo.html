@@ -1,0 +1,12 @@
+{% extends 'App1/padre.html' %}
+{% load static %}
+{% block main %}
+{%for m in marcas %}
+
+    <p>Marca:{{m.marca}}</p>
+    <p>Modelo:{{m.modelo}}</p>
+    <p>Valor:{{m.valor}}</p>
+
+{% endfor %}    
+
+{%endblock%}

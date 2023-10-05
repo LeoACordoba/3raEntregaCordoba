@@ -1,0 +1,15 @@
+{% extends 'App1/padre.html' %}
+{% load static %}
+{% block main %}
+<h1>Agregar Clientes</h1>
+<form action="" method="POST">
+    {% csrf_token %}
+
+    <table> 
+        {{miFormulario.as_table}}    
+    </table>
+
+    <input type="submit" value="Enviar">
+
+</form>
+{% endblock %}
